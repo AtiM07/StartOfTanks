@@ -2,15 +2,15 @@ using System;
 using UnityEngine;
 using Newtonsoft.Json.Linq;
 
-public class JsonParser : MonoBehaviour
+public class CellJsonParser : MonoBehaviour
 {
     [SerializeField] private TextAsset jsonFile;
 
     public CellType[,] FieldType { get; private set; }
 
 
-    private int column;
-    private int row;
+    private int _column;
+    private int _row;
 
     void Start()
     {
@@ -21,9 +21,9 @@ public class JsonParser : MonoBehaviour
     {
         var jObject = JObject.Parse(json);
         
-        int.TryParse(jObject["column"].ToString(), out column);
-        int.TryParse(jObject["row"].ToString(), out row);
-        var list = new CellType[column, row];
+        int.TryParse(jObject["column"].ToString(), out _column);
+        int.TryParse(jObject["row"].ToString(), out _row);
+        var list = new CellType[_column, _row];
 
         return list;
     }

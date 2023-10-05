@@ -14,14 +14,14 @@ public class CellsGenerate : MonoBehaviour
     private const int Row = 6;
 
     private GlobalCard _globalCard;
-    private JsonParser _jsonParser;
+    private CellJsonParser _cellJsonParser;
     private CellType[,] _fieldType;
     private GameObject[,] _field;
 
     private void Start()
     {
         _globalCard = Camera.main.GetComponent<GlobalCard>();
-        _jsonParser = Camera.main.GetComponent<JsonParser>();
+        _cellJsonParser = Camera.main.GetComponent<CellJsonParser>();
         _fieldType = _globalCard.FieldType;
         _field = new GameObject[Row, Column];
         GenerateField();
