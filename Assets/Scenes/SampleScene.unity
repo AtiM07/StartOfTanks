@@ -1974,7 +1974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 780788391881391283, guid: 71e0daa22a48d1c48a1a7881d68abaff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 473.4
+      value: 473.39996
       objectReference: {fileID: 0}
     - target: {fileID: 780788391881391283, guid: 71e0daa22a48d1c48a1a7881d68abaff, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3010,6 +3010,18 @@ PrefabInstance:
       propertyPath: hangarPanel
       value: 
       objectReference: {fileID: 7676244665907875384, guid: 730587b2f247877459aeff7f31c18830, type: 3}
+    - target: {fileID: 5811674791960826736, guid: 964987b3d86b7c34ab833f19230ba1cb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811674792304286123, guid: 964987b3d86b7c34ab833f19230ba1cb, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811674792392854815, guid: 964987b3d86b7c34ab833f19230ba1cb, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5811674793255960424, guid: 964987b3d86b7c34ab833f19230ba1cb, type: 3}
       propertyPath: m_Name
       value: MainPanel

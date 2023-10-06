@@ -378,7 +378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5811674793255960427
 RectTransform:
   m_ObjectHideFlags: 0
@@ -452,11 +452,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233d4b1dfd93eff47a347e15560dc7d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReconnaissanceButton: {fileID: 3106257360323377422}
-  ResourcesButton: {fileID: 3106257360494505655}
-  HangarButton: {fileID: 3106257361462102733}
-  FortificationButton: {fileID: 3106257361736667316}
-  ManufactureButton: {fileID: 3106257360349063721}
+  reconnaissanceButton: {fileID: 3106257360323377422}
+  resourcesButton: {fileID: 3106257360494505655}
+  hangarButton: {fileID: 3106257361462102733}
+  fortificationButton: {fileID: 3106257361736667316}
+  manufactureButton: {fileID: 3106257360349063721}
+  expeditionWindow: {fileID: 4352392317203664665, guid: 4e15b41c02df0e643a4e9450e39695fd, type: 3}
+  reconnaissanceWindow: {fileID: 3853561880266899448, guid: 4c83e312a778b3946a4a9b488d6e6f7e, type: 3}
 --- !u!1001 &5811674792342863350
 PrefabInstance:
   m_ObjectHideFlags: 0

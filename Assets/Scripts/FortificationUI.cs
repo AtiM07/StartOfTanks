@@ -2,31 +2,32 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class FortificationUI : MonoBehaviour
 {
-    [SerializeField] private Button NitratesButton;
-    [SerializeField] private Button WaterButton;
-    [SerializeField] private Button GunpowderButton;
-    [SerializeField] private Button OrganicButton;
-    [SerializeField] private Button LimestoneButton;
-    [SerializeField] private Button ProduceButton;
-    [SerializeField] private Button BuildButton;
+    [SerializeField] private Button nitratesButton;
+    [SerializeField] private Button waterButton;
+    [SerializeField] private Button gunpowderButton;
+    [SerializeField] private Button organicButton;
+    [SerializeField] private Button limestoneButton;
+    [SerializeField] private Button produceButton;
+    [SerializeField] private Button buildButton;
 
     private Button[] _recipes;
  
     private void Start()
     {
-        _recipes = new[] { NitratesButton, WaterButton, GunpowderButton, OrganicButton, LimestoneButton };
-        NitratesButton.onClick.AddListener(() => ChangeRecipe(0));
-        WaterButton.onClick.AddListener(() => ChangeRecipe(1));
-        GunpowderButton.onClick.AddListener(() => ChangeRecipe(2));
-        OrganicButton.onClick.AddListener(() => ChangeRecipe(3));
-        LimestoneButton.onClick.AddListener(() => ChangeRecipe(4));
+        _recipes = new[] { nitratesButton, waterButton, gunpowderButton, organicButton, limestoneButton };
+        nitratesButton.onClick.AddListener(() => ChangeRecipe(0));
+        waterButton.onClick.AddListener(() => ChangeRecipe(1));
+        gunpowderButton.onClick.AddListener(() => ChangeRecipe(2));
+        organicButton.onClick.AddListener(() => ChangeRecipe(3));
+        limestoneButton.onClick.AddListener(() => ChangeRecipe(4));
         
-        ProduceButton.onClick.AddListener(Produce);
-        BuildButton.onClick.AddListener(Build);
+        produceButton.onClick.AddListener(Produce);
+        buildButton.onClick.AddListener(Build);
     }
 
     private void ChangeRecipe(int num)

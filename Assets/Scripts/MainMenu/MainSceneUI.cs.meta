@@ -3,7 +3,14 @@ guid: 233d4b1dfd93eff47a347e15560dc7d0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - reconnaissanceButton: {instanceID: 0}
+  - resourcesButton: {instanceID: 0}
+  - hangarButton: {instanceID: 0}
+  - fortificationButton: {instanceID: 0}
+  - manufactureButton: {instanceID: 0}
+  - expeditionWindow: {fileID: 4352392317203664665, guid: 4e15b41c02df0e643a4e9450e39695fd, type: 3}
+  - reconnaissanceWindow: {fileID: 3853561880266899448, guid: 4c83e312a778b3946a4a9b488d6e6f7e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

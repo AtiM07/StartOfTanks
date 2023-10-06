@@ -39,9 +39,4 @@ public class HangarUI : MonoBehaviour
         Debug.Log("Удаление из слота");
         
     }
-
-    public void Close()
-    {
-        
-    }
 }

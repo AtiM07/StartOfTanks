@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e4f2770d066ff104fa632a144721e185
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - reconnaissanceButton: {instanceID: 0}
+  - okPopUpWindow: {fileID: 1390408223285189313, guid: 3b026cdf6b47d3441bef63236358b97d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
