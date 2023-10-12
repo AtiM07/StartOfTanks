@@ -1,10 +1,9 @@
 using System;
-using UnityEngine;
 
 [Serializable]
-public class Cell : MonoBehaviour
+public class Cell
 {
-    public CellType Type = CellType.None;
+    public CellType Type;
     public int X;
     public int Y;
 }

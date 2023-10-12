@@ -6,16 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="8549727d-b203-4099-94ba-1aba176b992b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Jura-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Jura-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Panel/FortificationPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Panel/FortificationPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Panel/HangarPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Panel/HangarPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Panel/MainPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Panel/MainPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Panel/ManufacturePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Panel/ManufacturePanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Windows/OKPopUpWindow Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Windows/OKPopUpWindow Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Windows/ReconnaissancePopUpWindow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Windows/ReconnaissancePopUpWindow.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CellJsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CellJsonParser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FortificationUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FortificationUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HangarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HangarUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainSceneUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainSceneUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainSceneUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainSceneUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Cell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Cell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/CellType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/CellType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/CellsGenerate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/CellsGenerate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/GlobalCard.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/GlobalCard.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PopUp/ExpeditionPopUpUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PopUp/ExpeditionPopUpUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PopUp/OkPopUpUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PopUp/OkPopUpUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PopUp/ReconnaissancePopUpUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PopUp/ReconnaissancePopUpUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/cave_upd.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/cave_upd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PopUp/ExpeditionPopUpUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PopUp/ReconnaissancePopUpUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SearcherScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -51,6 +58,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.35433072&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -123,6 +131,10 @@
       <workItem from="1696516108448" duration="6000" />
       <workItem from="1696533913964" duration="819000" />
       <workItem from="1696580330983" duration="5973000" />
+      <workItem from="1696837961231" duration="1904000" />
+      <workItem from="1697038565670" duration="168000" />
+      <workItem from="1697089079346" duration="3353000" />
+      <workItem from="1697092521359" duration="303000" />
     </task>
     <servers />
   </component>

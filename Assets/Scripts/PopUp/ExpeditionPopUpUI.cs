@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +13,8 @@ public class ExpeditionPopUpUI : MonoBehaviour
     
     private void GoExplore()
     {
+        var script = okPopUpWindow.GetComponent<OkPopUpUI>();
+        script.SetResultText("Результат экспедиции");
         Instantiate(okPopUpWindow, transform.parent);
         Destroy(gameObject);
     }

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2564194669630560086}
   - component: {fileID: 2564194669630560087}
   - component: {fileID: 8445506101778459238}
-  - component: {fileID: 1009601181613818593}
   m_Layer: 5
   m_Name: Cell
   m_TagString: Untagged
@@ -123,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1009601181613818593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -135,21 +134,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1009601181613818593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2564194669630560040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37e71b2911e2a444b35d5502ea5c7d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Type: 0
-  X: 5
-  Y: 8
 --- !u!1 &6569495625103292132
 GameObject:
   m_ObjectHideFlags: 0

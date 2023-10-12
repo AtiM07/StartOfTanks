@@ -1,4 +1,5 @@
-using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 using UnityEngine;
 using Newtonsoft.Json.Linq;
 
@@ -7,7 +8,6 @@ public class CellJsonParser : MonoBehaviour
     [SerializeField] private TextAsset jsonFile;
 
     public CellType[,] FieldType { get; private set; }
-
 
     private int _column;
     private int _row;
@@ -23,8 +23,15 @@ public class CellJsonParser : MonoBehaviour
         
         int.TryParse(jObject["column"].ToString(), out _column);
         int.TryParse(jObject["row"].ToString(), out _row);
-        var list = new CellType[_column, _row];
-
+        var list = new CellType[_row, _column];
+        
+        var cells = JsonConvert.DeserializeObject<List<Cell>>(jObject["cells"].ToString());
+        
+        foreach (var cell in cells)
+        {
+            list[cell.Y, cell.X] = cell.Type;
+        }
+        
         return list;
     }
 }

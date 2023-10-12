@@ -13,16 +13,14 @@ public class CellsGenerate : MonoBehaviour
     private const int Column = 9;
     private const int Row = 6;
 
-    private GlobalCard _globalCard;
     private CellJsonParser _cellJsonParser;
     private CellType[,] _fieldType;
     private GameObject[,] _field;
 
     private void Start()
     {
-        _globalCard = Camera.main.GetComponent<GlobalCard>();
         _cellJsonParser = Camera.main.GetComponent<CellJsonParser>();
-        _fieldType = _globalCard.FieldType;
+        _fieldType = _cellJsonParser.FieldType;
         _field = new GameObject[Row, Column];
         GenerateField();
     }
@@ -62,17 +60,14 @@ public class CellsGenerate : MonoBehaviour
 
     private void CreateCell(int i, int j, int alpha, Sprite sprite, bool interactable, CellType type)
     {
+        //todo:  Переделать создание объектов на префабы
         var icon = cellPrefab.transform.GetChild(0).GetComponentInChildren<Image>();
         var button = cellPrefab.transform.GetComponent<Button>();
-        var pref = cellPrefab.transform.GetComponent<Cell>();
 
         _field[i, j] = cellPrefab;
         icon.color = new Color(icon.color.a, icon.color.g, icon.color.b, alpha);
         icon.sprite = sprite;
         button.interactable = interactable;
         button.enabled = !(interactable && type == CellType.Active);
-        pref.Type = type;
-        pref.X = i;
-        pref.Y = j;
     }
 }
