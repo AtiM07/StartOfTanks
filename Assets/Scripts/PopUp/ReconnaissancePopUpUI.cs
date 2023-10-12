@@ -15,9 +15,10 @@ public class ReconnaissancePopUpUI : MonoBehaviour
     
     private void GoExplore()
     {
-        var script = okPopUpWindow.GetComponent<OkPopUpUI>();
-        script.SetResultText("Результат разведки");
-        Instantiate(okPopUpWindow, transform.parent);
+        var okObject = Instantiate(okPopUpWindow, transform.parent);
+        var script = okObject.GetComponent<OkPopUpUI>();
+        script.SetTitleText("Результат разведки");
+        script.SetResultText("0");
         Destroy(gameObject);
     }
 }

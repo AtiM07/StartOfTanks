@@ -11,8 +11,6 @@ public class OkPopUpUI : MonoBehaviour
     private void Start()
     {
         okButton.onClick.AddListener(() => Destroy(gameObject));
-        resultText.text = "0";
-        titleText.text = "Результат выполнения:";
     }
 
     public void SetResultText(string result)

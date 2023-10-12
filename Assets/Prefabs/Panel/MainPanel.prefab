@@ -155,8 +155,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5811674792392854815}
-  - component: {fileID: 5811674792392854814}
   - component: {fileID: 5811674792392854785}
+  - component: {fileID: 5811674792392854814}
   m_Layer: 5
   m_Name: Cells
   m_TagString: Untagged
@@ -184,23 +184,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5811674792392854814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5811674792392854812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96f66ef0f81cb344fbcbe78d2b174d0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cellPrefab: {fileID: 2564194669630560040, guid: bef0ad65e90e21745a899fee6a0609f4, type: 3}
-  towerImage: {fileID: 21300000, guid: 41dbdd1789a45e14d90262dc95eedc7f, type: 3}
-  tankImage: {fileID: 21300000, guid: 46570b2eb04d0074c95e3a70fcc25901, type: 3}
-  diamondImage: {fileID: 21300000, guid: 8d65bafc7d21fae4fa18d149efe7661d, type: 3}
-  factoryImage: {fileID: 21300000, guid: 326ecbdb606d3ab449de6826e8ffef55, type: 3}
 --- !u!114 &5811674792392854785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +208,24 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 9
+--- !u!114 &5811674792392854814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5811674792392854812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f66ef0f81cb344fbcbe78d2b174d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disactivePrefab: {fileID: 2564194669630560040, guid: bef0ad65e90e21745a899fee6a0609f4, type: 3}
+  activePrefab: {fileID: 6045367458685270762, guid: 924a03e8b2dfea5499966aa9b791f79f, type: 3}
+  towerPrefab: {fileID: 831601635960580346, guid: 987b6b4deb207c7448f882ea9aac12cc, type: 3}
+  tankPrefab: {fileID: 8614993877272338714, guid: 721766e608f5e2a4e92b458297fcc235, type: 3}
+  diamondPrefab: {fileID: 2977797873611744655, guid: bf9d690cc4d3bb542a32adfa1c2622f7, type: 3}
+  factoryPrefab: {fileID: 3688257840719707277, guid: 6ed800b2627964442a5ffb8bc4b268ab, type: 3}
 --- !u!1 &5811674792641523526
 GameObject:
   m_ObjectHideFlags: 0

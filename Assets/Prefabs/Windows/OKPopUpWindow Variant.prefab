@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   okButton: {fileID: 5639517971648401806}
-  resultText: {fileID: 6155769787652517430}
-  titleText: {fileID: 1380937548474600474}
+  resultText: {fileID: 1380937548474600474}
+  titleText: {fileID: 6155769787652517430}
 --- !u!114 &5639517971648401806 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5872543776845069651, guid: e21fc70d32f54b8489d33f07ee95f4a9, type: 3}

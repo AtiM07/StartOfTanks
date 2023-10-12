@@ -39,16 +39,10 @@ public class BattleLoader : MonoBehaviour
 
     private void OpenWindow()
     {
-        var script = okPopUpWindow.GetComponent<OkPopUpUI>();
+        var okObject = Instantiate(okPopUpWindow, transform.parent);
+        var script = okObject.GetComponent<OkPopUpUI>();
         script.SetTitleText("Результат боя:");
         script.SetResultText("Бой прошел");
-        var okObject = Instantiate(okPopUpWindow, transform.parent);
-        script = okObject.GetComponent<OkPopUpUI>();
-        script.okButton.onClick.AddListener(() =>
-            {
-                Debug.Log("BANG");
-                SceneManager.LoadScene("MainScene");
-            }
-        );
+        script.okButton.onClick.AddListener(() => SceneManager.LoadScene("MainScene"));
     }
 }

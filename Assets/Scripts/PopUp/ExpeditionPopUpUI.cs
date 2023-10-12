@@ -13,9 +13,10 @@ public class ExpeditionPopUpUI : MonoBehaviour
     
     private void GoExplore()
     {
-        var script = okPopUpWindow.GetComponent<OkPopUpUI>();
-        script.SetResultText("Результат экспедиции");
-        Instantiate(okPopUpWindow, transform.parent);
+        var okObject = Instantiate(okPopUpWindow, transform.parent);
+        var script = okObject.GetComponent<OkPopUpUI>();
+        script.SetTitleText("Создание добычи ресурсов");
+        script.SetResultText("0");
         Destroy(gameObject);
     }
 }

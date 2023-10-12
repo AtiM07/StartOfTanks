@@ -45,25 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resources:
-    Oil: 0
-    Coal: 0
-    Ore: 0
-    Limestone: 0
-    Sulphur: 0
-    Water: 0
-    Money: 0
+    Oil: 1000
+    Coal: 500
+    Ore: 1000
+    Limestone: 50
+    Sulphur: 150
+    Water: 200
+    Money: 1000
   onResourcesChange:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ResourcesBar, Assembly-CSharp
-        m_MethodName: UpdateView
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
