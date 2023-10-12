@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   okButton: {fileID: 5639517971648401806}
+  resultText: {fileID: 6155769787652517430}
   titleText: {fileID: 1380937548474600474}
 --- !u!114 &5639517971648401806 stripped
 MonoBehaviour:
@@ -193,5 +194,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6155769787652517430 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5355150241481032427, guid: e21fc70d32f54b8489d33f07ee95f4a9, type: 3}
+  m_PrefabInstance: {fileID: 2250921047510428893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
