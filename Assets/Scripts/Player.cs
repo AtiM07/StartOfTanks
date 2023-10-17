@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Данные игрока
+/// </summary>
 public class Player : MonoBehaviour
 {
     [SerializeField] public Resources resources;

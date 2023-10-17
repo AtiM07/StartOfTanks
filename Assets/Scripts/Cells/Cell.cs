@@ -1,5 +1,8 @@
 using System;
 
+/// <summary>
+/// ячейка глобальной карты
+/// </summary>
 [Serializable]
 public class Cell
 {

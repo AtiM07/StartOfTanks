@@ -1,8 +1,9 @@
-using System;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
+/// <summary>
+/// Отображение ресурсов
+/// </summary>
 public class ResourcesBar : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI oilCountText;

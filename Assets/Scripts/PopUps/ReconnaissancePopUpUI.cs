@@ -1,8 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Пользовательский интерфейс окна сбора ресурсов 
+/// </summary>
 public class ReconnaissancePopUpUI : MonoBehaviour
 {
     [SerializeField] private Button reconnaissanceButton;
@@ -13,7 +14,7 @@ public class ReconnaissancePopUpUI : MonoBehaviour
         reconnaissanceButton.onClick.AddListener(GoExplore);
     }
     
-    private void GoExplore()
+    private void GoExplore() //отправить на разведку
     {
         var okObject = Instantiate(okPopUpWindow, transform.parent);
         var script = okObject.GetComponent<OkPopUpUI>();

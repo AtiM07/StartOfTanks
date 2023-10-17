@@ -2,6 +2,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Пользовательский интерфейс окна подтверждения
+/// </summary>
 public class OkPopUpUI : MonoBehaviour
 {
     [SerializeField] public Button okButton;
@@ -13,12 +16,20 @@ public class OkPopUpUI : MonoBehaviour
         okButton.onClick.AddListener(() => Destroy(gameObject));
     }
 
-    public void SetResultText(string result)
+    /// <summary>
+    /// Передать значение результата
+    /// </summary>
+    /// <param name="result"></param>
+    public void SetResultText(string result) //to do: сделать интерфейсом
     {
         resultText.text = result;
     }
 
-    public void SetTitleText(string title)
+    /// <summary>
+    /// Передать значение заголовка
+    /// </summary>
+    /// <param name="title"></param>
+    public void SetTitleText(string title) //to do: сделать интерфейсом
     {
         titleText.text = title;
     }

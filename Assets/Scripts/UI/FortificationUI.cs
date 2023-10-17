@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Пользовательский интерфейс главной сцены
+/// </summary>
 public class FortificationUI : MonoBehaviour
 {
     [SerializeField] private Button nitratesButton;

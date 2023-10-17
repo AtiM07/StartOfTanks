@@ -2,6 +2,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Пользовательский интерфейс ангара
+/// </summary>
 public class HangarUI : MonoBehaviour
 {
     [SerializeField] private GameObject characteristics;
@@ -14,7 +17,7 @@ public class HangarUI : MonoBehaviour
     {
         backButton.onClick.AddListener(() =>
         {
-            if (true)
+            if (true) //проверка на корректность отряда
             {
                 StartCoroutine(CloseHangar());
             }
@@ -32,7 +35,7 @@ public class HangarUI : MonoBehaviour
         
     }
 
-    IEnumerator CloseHangar()
+    private IEnumerator CloseHangar() //выйти из ангара
     {
         var infoObject = Instantiate(infoWindow, transform);
         var script = infoObject.GetComponent<InfoPopUpUI>();

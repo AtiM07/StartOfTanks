@@ -2,9 +2,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Переключатель выбора из нескольких элементов
+/// </summary>
 public class SelectorScript : MonoBehaviour
 {
     [SerializeField] private List<GameObject> selectors;
+    
     private void Start()
     {
         foreach (var selector in selectors)

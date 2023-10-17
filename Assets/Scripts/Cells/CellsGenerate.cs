@@ -1,6 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 
+/// <summary>
+/// √енераци€ €чеек глобальной карты
+/// </summary>
 public class CellsGenerate : MonoBehaviour
 {
     [SerializeField] private GameObject disactivePrefab;
@@ -10,10 +12,10 @@ public class CellsGenerate : MonoBehaviour
     [SerializeField] private GameObject diamondPrefab;
     [SerializeField] private GameObject factoryPrefab;
 
-    private const int Column = 9;
-    private const int Row = 6;
+    private const int Column = 9; //to do: брать из json
+    private const int Row = 6; //to do: брать из json
 
-    private CellJsonParser _cellJsonParser;
+    private CellJsonParser _cellJsonParser; //расположение €чеек
 
     private void Start()
     {
@@ -21,7 +23,7 @@ public class CellsGenerate : MonoBehaviour
         GenerateField();
     }
 
-    private void GenerateField()
+    private void GenerateField() //генераци€ €чеек глобальной карты по заданной в json карте
     {
         for (int i = 0; i < Row; i++)
         {

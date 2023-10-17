@@ -1,8 +1,9 @@
-
 using System;
-using JetBrains.Annotations;
 using UnityEngine;
 
+/// <summary>
+/// Поиск необходимых объектов проекта
+/// </summary>
 public static class SearcherScript
 {
     public static GameObject GetPanel(Transform canvas, string name)

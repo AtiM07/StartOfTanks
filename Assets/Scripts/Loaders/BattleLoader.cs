@@ -3,9 +3,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Загрузка боя
+/// </summary>
 public class BattleLoader : MonoBehaviour
 {
-    [SerializeField] private Slider sliderLeft;
+    [SerializeField] private Slider sliderLeft; 
     [SerializeField] private Slider sliderRight;
     [SerializeField] private GameObject bangImage;
     [SerializeField] private GameObject okPopUpWindow;
@@ -19,8 +22,8 @@ public class BattleLoader : MonoBehaviour
         bangImage.SetActive(false);
         StartCoroutine(Loading());
     }
-
-    IEnumerator Loading()
+    
+    private IEnumerator Loading() //процесс загрузки
     {
         var time = loadTime;
         var value = 0f;
@@ -34,10 +37,10 @@ public class BattleLoader : MonoBehaviour
 
         bangImage.SetActive(true);
         yield return new WaitForSeconds(0.5f);
-        OpenWindow();
+        Result(); //to do: начало боя
     }
-
-    private void OpenWindow()
+    
+    private void Result() //открыть окно с результатами боя
     {
         var okObject = Instantiate(okPopUpWindow, transform.parent);
         var script = okObject.GetComponent<OkPopUpUI>();

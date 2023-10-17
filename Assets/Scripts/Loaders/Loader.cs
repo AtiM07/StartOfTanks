@@ -3,6 +3,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Загрузка при запуске игры
+/// </summary>
 public class Loader : MonoBehaviour
 {
     private Slider slider;
@@ -16,7 +19,7 @@ public class Loader : MonoBehaviour
         StartCoroutine(Loading());
     }
 
-    IEnumerator Loading()
+    IEnumerator Loading() //процесс загрузки
     {
         var time = loadTime;
         while (slider.value < 1)
@@ -26,6 +29,6 @@ public class Loader : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("MainScene"); //запуск сцены главного меню
     }
 }

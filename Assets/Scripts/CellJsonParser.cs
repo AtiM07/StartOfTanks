@@ -3,10 +3,16 @@ using Newtonsoft.Json;
 using UnityEngine;
 using Newtonsoft.Json.Linq;
 
+/// <summary>
+/// ѕарсер глобальной карты
+/// </summary>
 public class CellJsonParser : MonoBehaviour
 {
     [SerializeField] private TextAsset jsonFile;
 
+    /// <summary>
+    /// √лобальна€ карта
+    /// </summary>
     public CellType[,] FieldType { get; private set; }
 
     private int _column;
@@ -17,7 +23,7 @@ public class CellJsonParser : MonoBehaviour
         FieldType = GetCells(jsonFile.ToString());
     }
 
-    private CellType[,] GetCells(string json)
+    private CellType[,] GetCells(string json) //чтение расположени€ €чеек
     {
         var jObject = JObject.Parse(json);
         

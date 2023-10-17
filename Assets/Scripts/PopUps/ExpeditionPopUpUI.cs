@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Пользовательский интерфейс окна экспедиции
+/// </summary>
 public class ExpeditionPopUpUI : MonoBehaviour
 {
     [SerializeField] private Button resoursesButton;
@@ -11,7 +14,7 @@ public class ExpeditionPopUpUI : MonoBehaviour
         resoursesButton.onClick.AddListener(GoExplore);
     }
     
-    private void GoExplore()
+    private void GoExplore() //отправить в экспедицию
     {
         var okObject = Instantiate(okPopUpWindow, transform.parent);
         var script = okObject.GetComponent<OkPopUpUI>();

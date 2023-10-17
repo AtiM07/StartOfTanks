@@ -1,7 +1,9 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Пользовательский интерфейс производства
+/// </summary>
 public class ManufactureUI : MonoBehaviour
 {
     [SerializeField] private Button CreateButton;
