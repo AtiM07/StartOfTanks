@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 /// <summary>
 /// ѕарсер глобальной карты
 /// </summary>
-public class CellJsonParser : MonoBehaviour
+public class CellJsonParser : MonoBehaviour, IJsonParser<CellType[,]>
 {
     [SerializeField] private TextAsset jsonFile;
 
@@ -18,13 +18,14 @@ public class CellJsonParser : MonoBehaviour
     private int _column;
     private int _row;
 
-    void Start()
+    private void Start()
     {
-        FieldType = GetCells(jsonFile.ToString());
+        FieldType = Parsing();
     }
 
-    private CellType[,] GetCells(string json) //чтение расположени€ €чеек
+    public CellType[,] Parsing() //чтение расположени€ €чеек
     {
+        var json = jsonFile.ToString();
         var jObject = JObject.Parse(json);
         
         int.TryParse(jObject["column"].ToString(), out _column);

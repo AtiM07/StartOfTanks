@@ -4,40 +4,70 @@ using System;
 /// Перечисление ресурсов игрока
 /// </summary>
 [Serializable]
-public struct Resources
+public class Resources
 {
     /// <summary>
     /// Нефть
     /// </summary>
-    public int Oil;
+    public int Oil = 0;
 
     /// <summary>
     /// Уголь
     /// </summary>
-    public int Coal;
+    public int Coal = 0;
 
     /// <summary>
     /// Руда
     /// </summary>
-    public int Ore;
+    public int Ore = 0;
 
     /// <summary>
     /// Известняк
     /// </summary>
-    public int Limestone;
+    public int Limestone = 0;
 
     /// <summary>
     /// Сера
     /// </summary>
-    public int Sulphur;
+    public int Sulphur = 0;
 
     /// <summary>
     /// Вода
     /// </summary>
-    public int Water;
+    public int Water = 0;
 
     /// <summary>
     /// Деньги
     /// </summary>
-    public int Money;
+    public int Money = 0;
+
+    /// <summary>
+    /// Энергия
+    /// </summary>
+    public int Energy = 0;
+
+    /// <summary>
+    /// Детали заводов
+    /// </summary>
+    public int Details = 0;
+
+    /// <summary>
+    /// Сталь
+    /// </summary>
+    public int Steel = 0;
+
+    /// <summary>
+    /// Игровая валюта
+    /// </summary>
+    public int Currency = 0;
+
+    /// <summary>
+    /// Пластик
+    /// </summary>
+    public int Plastic = 0;
+
+    /// <summary>
+    /// Резина
+    /// </summary>
+    public int Rubber = 0;
 }

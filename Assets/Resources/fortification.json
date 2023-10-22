@@ -1,0 +1,89 @@
+   
+    {
+        "builds": [
+            {
+                "name": "Горно-рудный",
+                "description": "Производит очищенную руду",
+                "resources": {
+                    "energy" : "100",
+                    "details": "200",
+                    "coal": "200", 
+                    "oil": "0",
+                    "steel": "200",
+                    "currency": "1000",
+                    "plastic": "0",
+                    "rubber": "0"
+                }
+            },
+            {
+                "name": "Литейный",
+                "description": "Производит сталь, цветные металлы",
+                "resources": {
+                    "energy" : "100",
+                    "details": "300",
+                    "coal": "200",
+                    "oil": "0",
+                    "steel": "200",
+                    "currency": "2000",
+                    "plastic": "0",
+                    "rubber": "0"
+                }
+            },
+            {
+                "name": "Химический",
+                "description": "Производит нитраты, порох, воду известняк и органику",
+                "resources": {
+                    "energy" : "100",
+                    "details": "150",
+                    "coal": "100",
+                    "oil": "100",
+                    "steel": "200",
+                    "currency": "2000",
+                    "plastic": "100",
+                    "rubber": "50"
+                }
+            },
+            {
+                "name": "Нефтяной",
+                "description": "Производит нефть, топливо, резину и пластик",
+                "resources": {
+                    "energy" : "100",
+                    "details": "200",
+                    "coal": "50",
+                    "oil": "100",
+                    "steel": "50",
+                    "currency": "3000",
+                    "plastic": "100",
+                    "rubber": "50"
+                }
+            },
+            {
+                "name": "Энергетический",
+                "description": "Производит энергию",
+                "resources": {
+                    "energy" : "100",
+                    "details": "150",
+                    "coal": "100",
+                    "oil": "100",
+                    "steel": "200",
+                    "currency": "2000",
+                    "plastic": "100",
+                    "rubber": "50"
+                }
+            },
+            {
+                "name": "Инженерный",
+                "description": "Производит детали танков, снаряды, детали заводов",
+                "resources": {
+                    "energy" : "100",
+                    "details": "150",
+                    "coal": "100",
+                    "oil": "100",
+                    "steel": "200",
+                    "currency": "2000",
+                    "plastic": "100",
+                    "rubber": "50"
+                }
+            }
+        ]
+    }
