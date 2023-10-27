@@ -1,7 +1,7 @@
 using System;
 
 [Serializable]
-public class Builders
+public class Builder
 {
     public string Name;
     public string Description;

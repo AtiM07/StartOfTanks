@@ -1295,6 +1295,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6968984781630129459, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
   m_PrefabInstance: {fileID: 6968984781070670560}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &673772378 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+  m_PrefabInstance: {fileID: 6968984781070670560}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673772377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdb6c2a9914ad141bcbaf7c246042d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,6 +2027,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -128
       objectReference: {fileID: 0}
+    - target: {fileID: 3041086490708647215, guid: 71e0daa22a48d1c48a1a7881d68abaff, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 673772378}
     - target: {fileID: 3841567237239656974, guid: 71e0daa22a48d1c48a1a7881d68abaff, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -2326,7 +2341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894652882662299117, guid: 71e0daa22a48d1c48a1a7881d68abaff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 473.4
+      value: 473.39996
       objectReference: {fileID: 0}
     - target: {fileID: 5894652882662299117, guid: 71e0daa22a48d1c48a1a7881d68abaff, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4287,8 +4302,84 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Oil
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Ore
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Coal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Money
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Steel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Water
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Energy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Rubber
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Details
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Plastic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Sulphur
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Currency
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: resources.Limestone
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: onResourcesChange.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: onResourcesChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
       propertyPath: onResourcesChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 580436797}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: onResourcesChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: onResourcesChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateView
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: onResourcesChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ResourcesBar, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968984781630129460, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
+      propertyPath: onResourcesChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}

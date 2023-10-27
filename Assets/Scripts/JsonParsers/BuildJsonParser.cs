@@ -5,24 +5,22 @@ using UnityEngine;
 /// <summary>
 /// Парсер зданий для укрепрайона
 /// </summary>
-public class BuildJsonParser : MonoBehaviour, IJsonParser<Builders[]>
+public class BuildJsonParser : MonoBehaviour, IJsonParser<Builder[]>
 {
     [SerializeField] private TextAsset jsonFile;
     
-    public Builders[] Builders { get; private set; }
+    public Builder[] Builders { get; private set; }
 
     private void Start()
     {
         Builders = Parsing();
     }
     
-    public Builders[] Parsing() //чтение информации о возможных зданиях
+    public Builder[] Parsing() //чтение информации о возможных зданиях
     {
-        var json = jsonFile.ToString();
+        var json = jsonFile.text;
         var jObject = JObject.Parse(json);
-
-        var jArray = JArray.Parse(jObject["builds"].ToString());
         
-        return JsonConvert.DeserializeObject<Builders[]>(jObject["builds"].ToString());
+        return JsonConvert.DeserializeObject<Builder[]>(jObject["builds"].ToString());
     }
 }

@@ -45,13 +45,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resources:
-    Oil: 1000
-    Coal: 500
-    Ore: 1000
-    Limestone: 50
-    Sulphur: 150
-    Water: 200
-    Money: 1000
+    Oil: 2000
+    Coal: 2000
+    Ore: 2000
+    Limestone: 2000
+    Sulphur: 2000
+    Water: 2000
+    Money: 2000
+    Energy: 2000
+    Details: 2000
+    Steel: 2000
+    Currency: 2000
+    Plastic: 2000
+    Rubber: 2000
   onResourcesChange:
     m_PersistentCalls:
       m_Calls: []
