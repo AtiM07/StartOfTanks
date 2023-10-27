@@ -70,4 +70,76 @@ public class Resources
     /// Резина
     /// </summary>
     public int Rubber = 0;
+
+    public static Resources operator +(Resources a, Resources b)
+    {
+        var resources = new Resources();
+
+        var fields = typeof(Resources).GetFields();
+        foreach (var prop in fields)
+        {
+            var valueA = (int) prop.GetValue(a);
+            var valueB = (int) prop.GetValue(b);
+            prop.SetValue(resources, valueA + valueB);
+        }
+
+        return resources;
+    }
+    
+    public static Resources operator -(Resources a, Resources b)
+    {
+        var resources = new Resources();
+
+        var fields = typeof(Resources).GetFields();
+        foreach (var prop in fields)
+        {
+            var valueA = (int) prop.GetValue(a);
+            var valueB = (int) prop.GetValue(b);
+            prop.SetValue(resources, valueA - valueB);
+        }
+
+        return resources;
+    }
+    
+    /// <summary>
+    /// Сравнение происходит без учета нулевых значений правого значения
+    /// </summary>
+    /// <param name="a">Ресурсы игрока</param>
+    /// <param name="b">Ресурсы для сравнения</param>
+    public static bool operator <(Resources a, Resources b)
+    {
+        var fields = typeof(Resources).GetFields();
+        foreach (var prop in fields)
+        {
+            var current = (int)prop.GetValue(b);
+            if (current != 0)
+            {
+                var value = (int)prop.GetValue(a);
+                if (value < current)
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    /// <summary>
+    /// Сравнение происходит без учета нулевых значений правого значения
+    /// </summary>
+    /// <param name="a">Ресурсы игрока</param>
+    /// <param name="b">Ресурсы для сравнения</param>
+    public static bool operator >(Resources a, Resources b)
+    {
+        var fields = typeof(Resources).GetFields();
+        foreach (var prop in fields)
+        {
+            var current = (int)prop.GetValue(b);
+            if (current != 0)
+            {
+                var value = (int)prop.GetValue(a);
+                if (value > current)
+                    return false;
+            }
+        }
+        return true;
+    }
 }

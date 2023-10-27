@@ -82,23 +82,7 @@ public class FortificationUI : MonoBehaviour
         descriptionText.text = builder.Description;
         buildImage.sprite = image;
 
-        buildButton.interactable = CheckResources(builder.Resources);
-    }
-
-    private bool CheckResources(Resources buildResources)
-    {
-        foreach (var prop in buildResources.GetType().GetFields())
-        {
-            var current = (int)prop.GetValue(buildResources);
-            if (current != 0)
-            {
-                var value = (int)prop.GetValue(player.Resources);
-                if (value < current)
-                    return false;
-            }
-        }
-
-        return true;
+        buildButton.interactable = player.resources < builder.Resources;
     }
 
     private void ChangeRecipe(int num)

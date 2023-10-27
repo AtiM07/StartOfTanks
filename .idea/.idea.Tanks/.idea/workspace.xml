@@ -6,17 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8549727d-b203-4099-94ba-1aba176b992b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Builder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Builder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Jura-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Jura-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main/Main Camera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Panel/FortificationPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Panel/FortificationPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/fortification.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/fortification.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Builds/Builders.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Builds/Builder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Builds/Builders.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Builds/Builder.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JsonParsers/BuildJsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JsonParsers/BuildJsonParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Resources/Resources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Resources/Resources.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +24,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3d52072469f344969f5572d445f7b6c89a00/ff/0e9ade25/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b78f9add2a3e411ab5c48059b099d283284000/9b/0c148bc9/PropertyDescriptorCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonParsers/BuildJsonParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/JsonParsers/BuildJsonParser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonParsers/CellJsonParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SearcherScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TankBattle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/UI/FortificationUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/EditorGameServices/AdsService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/EditorGameServices/AdsServiceEnabler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/Settings/GameIdsUi.cs" root0="SKIP_HIGHLIGHTING" />
@@ -143,7 +136,7 @@
       <workItem from="1697978270857" duration="5403000" />
       <workItem from="1698384097626" duration="3000" />
       <workItem from="1698384142357" duration="8636000" />
-      <workItem from="1698396490472" duration="304000" />
+      <workItem from="1698396490472" duration="1279000" />
     </task>
     <servers />
   </component>
@@ -170,32 +163,6 @@
           <line>10</line>
           <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\Builder.cs" initialLine="11" containingFunctionPresentation="Method 'Start'" />
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs</url>
-          <line>95</line>
-          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\UI\FortificationUI.cs" initialLine="95" containingFunctionPresentation="Method 'CheckResources'">
-            <startOffsets>
-              <option value="3324" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3373" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs</url>
-          <line>65</line>
-          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\UI\FortificationUI.cs" initialLine="65" containingFunctionPresentation="Lambda expression inside Method 'Start'">
-            <startOffsets>
-              <option value="2253" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2328" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
