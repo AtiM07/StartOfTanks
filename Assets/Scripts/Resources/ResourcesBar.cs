@@ -6,22 +6,13 @@ using UnityEngine;
 /// </summary>
 public class ResourcesBar : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI oilCountText;
-    [SerializeField] private TextMeshProUGUI coalCountText;
-    [SerializeField] private TextMeshProUGUI oreCountText;
-    [SerializeField] private TextMeshProUGUI limestoneCountText;
-    [SerializeField] private TextMeshProUGUI sulphurCountText;
-    [SerializeField] private TextMeshProUGUI waterCountText;
-    [SerializeField] private TextMeshProUGUI moneyCountText;
+    [SerializeField] private TextMeshProUGUI[] valueGroup;
 
-    public void UpdateView(Resources resourses)
+    public void UpdateView(Resources resources)
     {
-        oilCountText.text = resourses.Oil.ToString();
-        coalCountText.text = resourses.Coal.ToString();
-        oreCountText.text = resourses.Ore.ToString();
-        limestoneCountText.text = resourses.Limestone.ToString();
-        sulphurCountText.text = resourses.Sulphur.ToString();
-        waterCountText.text = resourses.Water.ToString();
-        moneyCountText.text = resourses.Money.ToString();
+        foreach (var element in valueGroup)
+        {
+            element.text = resources.GetValue(element.name).ToString();
+        }
     }
 }

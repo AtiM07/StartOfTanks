@@ -6,6 +6,8 @@ using System;
 [Serializable]
 public class Resources
 {
+    #region Ресурсы
+
     /// <summary>
     /// Нефть
     /// </summary>
@@ -71,6 +73,10 @@ public class Resources
     /// </summary>
     public int Rubber = 0;
 
+    #endregion
+
+    public int GetValue(string name) => (int)typeof(Resources).GetField(name).GetValue(this);
+
     public static Resources operator +(Resources a, Resources b)
     {
         var resources = new Resources();
@@ -78,14 +84,14 @@ public class Resources
         var fields = typeof(Resources).GetFields();
         foreach (var prop in fields)
         {
-            var valueA = (int) prop.GetValue(a);
-            var valueB = (int) prop.GetValue(b);
+            var valueA = (int)prop.GetValue(a);
+            var valueB = (int)prop.GetValue(b);
             prop.SetValue(resources, valueA + valueB);
         }
 
         return resources;
     }
-    
+
     public static Resources operator -(Resources a, Resources b)
     {
         var resources = new Resources();
@@ -93,14 +99,14 @@ public class Resources
         var fields = typeof(Resources).GetFields();
         foreach (var prop in fields)
         {
-            var valueA = (int) prop.GetValue(a);
-            var valueB = (int) prop.GetValue(b);
+            var valueA = (int)prop.GetValue(a);
+            var valueB = (int)prop.GetValue(b);
             prop.SetValue(resources, valueA - valueB);
         }
 
         return resources;
     }
-    
+
     /// <summary>
     /// Сравнение происходит без учета нулевых значений правого значения
     /// </summary>
@@ -119,6 +125,7 @@ public class Resources
                     return false;
             }
         }
+
         return true;
     }
 
@@ -140,6 +147,7 @@ public class Resources
                     return false;
             }
         }
+
         return true;
     }
 }
