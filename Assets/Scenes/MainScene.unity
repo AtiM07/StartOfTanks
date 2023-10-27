@@ -1339,7 +1339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -4376,7 +4376,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4271359191026406307, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
       propertyPath: resources.Currency
-      value: 5000
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 4271359191026406307, guid: 709aa772b8bd7b84ab73b9e262a17638, type: 3}
       propertyPath: onResourcesChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target

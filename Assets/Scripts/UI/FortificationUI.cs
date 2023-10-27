@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -9,10 +10,14 @@ using UnityEngine.UI;
 public class FortificationUI : MonoBehaviour
 {
     [SerializeField] private GameObject[] buildingGroup; //массив зданий
-    
+
     [SerializeField] private TextMeshProUGUI nameText; //имя отображаемого здания
     [SerializeField] private TextMeshProUGUI descriptionText; //имя отображаемого здания
     [SerializeField] private Image buildImage; //имя отображаемого здания
+
+    [SerializeField] private GameObject recipeButtonsParent; //изделия
+    [SerializeField] private GameObject recipeButtonPrefab;
+    [SerializeField] private TextMeshProUGUI recipeText; //имя отображаемого здания
 
     [SerializeField] private Button produceButton;
     [SerializeField] private Button buildButton;
@@ -22,7 +27,8 @@ public class FortificationUI : MonoBehaviour
     private GameObject _activeBuild;
     private Resources _activeResources;
     private Player _player;
-    
+    private List<GameObject> recipes = new();
+
     private void Start()
     {
         _player = Camera.main.GetComponent<Player>();
@@ -41,12 +47,17 @@ public class FortificationUI : MonoBehaviour
             });
         }
 
+        Check(buildingGroup[0].GetComponent<Building>(),
+            buildingGroup[0].GetComponent<Image>().sprite); //отображаем первый завод
+
         produceButton.onClick.AddListener(Produce);
         buildButton.onClick.AddListener(Build);
     }
 
     private void Check(Building building, Sprite sprite) //переключение на выбранное здание
     {
+        ClearRecipe();
+        
         nameText.text = building.characteristics.Name;
         descriptionText.text = building.characteristics.Description;
         buildImage.sprite = sprite;
@@ -54,6 +65,22 @@ public class FortificationUI : MonoBehaviour
         resourcesBar.UpdateView(_activeResources); //отображение необходимых ресурсов
         buildButton.interactable =
             !building.isBuild && _player.resources < building.characteristics.Resources; //возможно ли построить
+
+        RecipeView(building.characteristics.Recipes);
+    }
+
+    private void ClearRecipe()
+    {
+        foreach (var item in recipes)
+        {
+            Destroy(item);
+        }
+    }
+    
+    private void RecipeView(Recipe[] list)
+    {
+        var obj = Instantiate(recipeButtonPrefab, recipeButtonsParent.transform);
+        recipes.Add(obj);
     }
 
     private void Build()
