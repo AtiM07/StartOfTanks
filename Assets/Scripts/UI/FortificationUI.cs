@@ -15,9 +15,12 @@ public class FortificationUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI descriptionText; //имя отображаемого здания
     [SerializeField] private Image buildImage; //имя отображаемого здания
 
-    [SerializeField] private GameObject recipeButtonsParent; //изделия
+    [SerializeField] private Transform recipeButtonsParent; //изделия
     [SerializeField] private GameObject recipeButtonPrefab;
-    [SerializeField] private TextMeshProUGUI recipeText; //имя отображаемого здания
+    [SerializeField] private GameObject recipeComponentPrefab;
+    [SerializeField] private TextMeshProUGUI recipeCountText;
+    [SerializeField] private TextMeshProUGUI recipeText; //имя отображаемого рецепта
+    [SerializeField] private Transform recipeComponentsParent;
 
     [SerializeField] private Button produceButton;
     [SerializeField] private Button buildButton;
@@ -29,6 +32,7 @@ public class FortificationUI : MonoBehaviour
     private Recipe _activeRecipe;
     private Player _player;
     private List<GameObject> recipes = new();
+    private List<GameObject> recipeComponents = new();
 
     private void Start()
     {
@@ -57,7 +61,8 @@ public class FortificationUI : MonoBehaviour
 
     private void Check(Building building, Sprite sprite) //переключение на выбранное здание
     {
-        ClearRecipe();
+        recipes.ForEach(Destroy);
+        recipeComponents.ForEach(Destroy);
 
         nameText.text = building.characteristics.Name;
         descriptionText.text = building.characteristics.Description;
@@ -74,8 +79,19 @@ public class FortificationUI : MonoBehaviour
     {
         _activeRecipe = recipe;
         recipeText.text = recipe.Name;
+        recipeCountText.text = recipe.Count.ToString();
         
-        //инициализаровать все необходимые ресурсы
+        RecipeComponentsView(recipe.Ingredients);
+    }
+
+    private void RecipeComponentsView(Ingredient[] recipeIngredients)
+    {
+        foreach (var ingredient in recipeIngredients)
+        {
+            var obj = Instantiate(recipeComponentPrefab, recipeComponentsParent.transform);
+            obj.GetComponent<ComponentCost>().UpdateView(ingredient, _player.resources);
+            recipeComponents.Add(obj);
+        }
     }
 
     private void RecipeButtonView(Recipe[] list)
@@ -90,15 +106,7 @@ public class FortificationUI : MonoBehaviour
         
         ActiveRecipeView(list[0]);
     }
-
-    private void ClearRecipe()
-    {
-        foreach (var item in recipes)
-        {
-            Destroy(item);
-        }
-    }
-
+    
     private void Build()
     {
         if (_activeBuild is null)

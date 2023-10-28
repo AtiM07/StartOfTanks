@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8549727d-b203-4099-94ba-1aba176b992b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Recipes/ComponentCost.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Recipes/ComponentCost.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/Jura-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Jura-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/RecipeButton Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/RecipeButton Variant.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Panel/FortificationPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Panel/FortificationPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/fortification.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/fortification.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,18 +27,18 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3d52072469f344969f5572d445f7b6c89a00/ff/0e9ade25/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/4e/1c1b64d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b78f9add2a3e411ab5c48059b099d283284000/9b/0c148bc9/PropertyDescriptorCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Fonts/Jura-Regular SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Prefabs/Panel/FortificationPanel.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonParsers/BuildJsonParser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/JsonParsers/BuildJsonParser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonParsers/CellJsonParser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/Resources/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SearcherScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TankBattle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/UI/FortificationUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/UI/FortificationUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/EditorGameServices/AdsService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/EditorGameServices/AdsServiceEnabler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/Settings/GameIdsUi.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/Messaging/Messenger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/VisualStudioInstallation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/State/WindowState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/TimelineUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
@@ -106,10 +105,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6864">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="6864" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -144,7 +143,7 @@
       <workItem from="1698384097626" duration="3000" />
       <workItem from="1698384142357" duration="8636000" />
       <workItem from="1698396490472" duration="13669000" />
-      <workItem from="1698511377571" duration="3042000" />
+      <workItem from="1698511377571" duration="5947000" />
     </task>
     <servers />
   </component>
@@ -154,6 +153,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -171,19 +181,6 @@
           <line>10</line>
           <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\Builder.cs" initialLine="11" containingFunctionPresentation="Method 'Start'" />
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs</url>
-          <line>69</line>
-          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\UI\FortificationUI.cs" initialLine="68" containingFunctionPresentation="Method 'Check'">
-            <startOffsets>
-              <option value="2671" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2722" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
