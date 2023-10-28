@@ -26,6 +26,7 @@ public class FortificationUI : MonoBehaviour
     private BuildJsonParser _buildJsonParser;
     private GameObject _activeBuild;
     private Resources _activeResources;
+    private Recipe _activeRecipe;
     private Player _player;
     private List<GameObject> recipes = new();
 
@@ -57,7 +58,7 @@ public class FortificationUI : MonoBehaviour
     private void Check(Building building, Sprite sprite) //переключение на выбранное здание
     {
         ClearRecipe();
-        
+
         nameText.text = building.characteristics.Name;
         descriptionText.text = building.characteristics.Description;
         buildImage.sprite = sprite;
@@ -66,7 +67,28 @@ public class FortificationUI : MonoBehaviour
         buildButton.interactable =
             !building.isBuild && _player.resources < building.characteristics.Resources; //возможно ли построить
 
-        RecipeView(building.characteristics.Recipes);
+        RecipeButtonView(building.characteristics.Recipes);
+    }
+
+    private void ActiveRecipeView(Recipe recipe)
+    {
+        _activeRecipe = recipe;
+        recipeText.text = recipe.Name;
+        
+        //инициализаровать все необходимые ресурсы
+    }
+
+    private void RecipeButtonView(Recipe[] list)
+    {
+        foreach (var element in list)
+        {
+            var obj = Instantiate(recipeButtonPrefab, recipeButtonsParent.transform);
+            var label = obj.GetComponent<Button>().GetComponentInChildren<TextMeshProUGUI>();
+            label.text = element.Name;
+            recipes.Add(obj);
+        }
+        
+        ActiveRecipeView(list[0]);
     }
 
     private void ClearRecipe()
@@ -75,12 +97,6 @@ public class FortificationUI : MonoBehaviour
         {
             Destroy(item);
         }
-    }
-    
-    private void RecipeView(Recipe[] list)
-    {
-        var obj = Instantiate(recipeButtonPrefab, recipeButtonsParent.transform);
-        recipes.Add(obj);
     }
 
     private void Build()
