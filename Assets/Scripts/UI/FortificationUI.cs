@@ -86,12 +86,15 @@ public class FortificationUI : MonoBehaviour
 
     private void RecipeComponentsView(Ingredient[] recipeIngredients)
     {
+        recipeComponents.ForEach(Destroy);
         foreach (var ingredient in recipeIngredients)
         {
             var obj = Instantiate(recipeComponentPrefab, recipeComponentsParent.transform);
             obj.GetComponent<ComponentCost>().UpdateView(ingredient, _player.resources);
             recipeComponents.Add(obj);
         }
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(recipeComponentsParent.GetComponent<RectTransform>());
     }
 
     private void RecipeButtonView(Recipe[] list)
@@ -99,14 +102,16 @@ public class FortificationUI : MonoBehaviour
         foreach (var element in list)
         {
             var obj = Instantiate(recipeButtonPrefab, recipeButtonsParent.transform);
-            var label = obj.GetComponent<Button>().GetComponentInChildren<TextMeshProUGUI>();
+            var button = obj.GetComponent<Button>();
+            button.onClick.AddListener(() => ActiveRecipeView(element));
+            var label = button.GetComponentInChildren<TextMeshProUGUI>();
             label.text = element.Name;
             recipes.Add(obj);
         }
         
         ActiveRecipeView(list[0]);
     }
-    
+
     private void Build()
     {
         if (_activeBuild is null)
