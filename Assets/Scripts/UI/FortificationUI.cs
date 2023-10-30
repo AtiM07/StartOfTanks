@@ -21,9 +21,11 @@ public class FortificationUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI recipeCountText;
     [SerializeField] private TextMeshProUGUI recipeText; //имя отображаемого рецепта
     [SerializeField] private Transform recipeComponentsParent;
+    [SerializeField] private GameObject recipeElements;
 
     [SerializeField] private Button produceButton;
     [SerializeField] private Button buildButton;
+    [SerializeField] private Button exploredButton;
     [SerializeField] private ResourcesBar resourcesBar;
 
     private BuildJsonParser _buildJsonParser;
@@ -57,6 +59,11 @@ public class FortificationUI : MonoBehaviour
 
         produceButton.onClick.AddListener(Produce);
         buildButton.onClick.AddListener(Build);
+        exploredButton.onClick.AddListener(() =>
+        {
+            _activeRecipe.IsExplored = true;
+            IsExplored(_activeRecipe);
+        });
     }
 
     private void Check(Building building, Sprite sprite) //переключение на выбранное здание
@@ -75,13 +82,23 @@ public class FortificationUI : MonoBehaviour
         RecipeButtonView(building.characteristics.Recipes);
     }
 
+    private void IsExplored(Recipe recipe)
+    {
+        recipeElements.SetActive(recipe.IsExplored);
+        exploredButton.gameObject.SetActive(!recipe.IsExplored);
+        exploredButton.interactable = buildButton.interactable;
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(recipeComponentsParent.GetComponent<RectTransform>());
+    }
+
     private void ActiveRecipeView(Recipe recipe)
     {
         _activeRecipe = recipe;
         recipeText.text = recipe.Name;
         recipeCountText.text = recipe.Count.ToString();
-        
         RecipeComponentsView(recipe.Ingredients);
+
+        IsExplored(recipe);
     }
 
     private void RecipeComponentsView(Ingredient[] recipeIngredients)
@@ -91,6 +108,8 @@ public class FortificationUI : MonoBehaviour
         {
             var obj = Instantiate(recipeComponentPrefab, recipeComponentsParent.transform);
             obj.GetComponent<ComponentCost>().UpdateView(ingredient, _player.resources);
+            if (ingredient.Count > _player.resources.GetValueByTranslate(ingredient.Name))
+                produceButton.interactable = false;
             recipeComponents.Add(obj);
         }
 
@@ -108,7 +127,7 @@ public class FortificationUI : MonoBehaviour
             label.text = element.Name;
             recipes.Add(obj);
         }
-        
+
         ActiveRecipeView(list[0]);
     }
 

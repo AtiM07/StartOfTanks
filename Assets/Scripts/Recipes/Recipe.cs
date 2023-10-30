@@ -6,4 +6,5 @@ public class Recipe
     public string Name;
     public int Count;
     public Ingredient[] Ingredients;
+    public bool IsExplored;
 }

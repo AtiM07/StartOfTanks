@@ -53,6 +53,8 @@ public class Resources
 
     [Description("Детали заводов")] public int Details = 0;
 
+    [Description("Газ")] public int Monoxide = 0;
+
     #endregion
 
     public int GetValue(string name) => (int)typeof(Resources).GetField(name).GetValue(this);
