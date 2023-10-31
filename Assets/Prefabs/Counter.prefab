@@ -281,6 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1656608402571230573}
   - component: {fileID: 7549464548590960467}
+  - component: {fileID: 6417359046334764657}
   m_Layer: 5
   m_Name: Counter
   m_TagString: Untagged
@@ -338,6 +339,22 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
+--- !u!114 &6417359046334764657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464333325068813676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d80246de543e04a8cc829f71498e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentText: {fileID: 4995073373243806810}
+  countText: {fileID: 7916547907951404887}
+  addButton: {fileID: 3459039546533459550}
+  minusButton: {fileID: 7717783633978760960}
 --- !u!1001 &2542790859350713350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -444,6 +461,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3560686363964322536, guid: 3c55d42911812a445ae1db349d8d1c8c, type: 3}
   m_PrefabInstance: {fileID: 2542790859350713350}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3459039546533459550 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1389700184720675416, guid: 3c55d42911812a445ae1db349d8d1c8c, type: 3}
+  m_PrefabInstance: {fileID: 2542790859350713350}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6772516720094816474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -550,3 +578,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1496583577108485994, guid: bb7b31e9bf82f1d438e6b9f92eb41076, type: 3}
   m_PrefabInstance: {fileID: 6772516720094816474}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7717783633978760960 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3956345477515294682, guid: bb7b31e9bf82f1d438e6b9f92eb41076, type: 3}
+  m_PrefabInstance: {fileID: 6772516720094816474}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

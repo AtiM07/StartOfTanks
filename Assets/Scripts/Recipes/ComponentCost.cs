@@ -14,4 +14,12 @@ public class ComponentCost : MonoBehaviour
 
         allCost.text = playerResources.GetValueByTranslate(ingredient.Name).ToString();
     }
+
+    public void UpdateView(Ingredient ingredient, int amount, Resources playerResources)
+    {
+        titleText.text = ingredient.Name;
+        currentCost.text = (ingredient.Count * amount).ToString();
+
+        allCost.text = playerResources.GetValueByTranslate(ingredient.Name).ToString();
+    }
 }
