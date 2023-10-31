@@ -1,0 +1,61 @@
+{
+  "tanks": [
+    {
+      "name": "Легкий танк",
+      "body": true,
+      "Power": [
+        "Min"
+      ],
+      "armor": "Min",
+      "radio": true,
+      "mask": true,
+      "exploration": true,
+      "maxfuel": 50,
+      "maxshells": 72,
+      "cost": 200
+    },
+    {
+      "name": "Средний танк",
+      "body": true,
+      "power": [
+        "Min",
+        "Medium"
+      ],
+      "armor": "Medium",
+      "radio": true,
+      "mask": true,
+      "exploration": false,
+      "maxfuel": 150,
+      "maxshells": 72,
+      "cost": 550
+    },
+    {
+      "name": "Тяжелый танк",
+      "body": true,
+      "power": [
+        "Max"
+      ],
+      "armor": "Max",
+      "radio": true,
+      "mask": false,
+      "exploration": false,
+      "maxfuel": 300,
+      "maxshells": 48,
+      "cost": 1200
+    },
+    {
+      "name": "САУ",
+      "body": true,
+      "power": [
+        "Max"
+      ],
+      "armor": "Max",
+      "radio": true,
+      "mask": false,
+      "exploration": false,
+      "maxfuel": 150,
+      "maxshells": 60,
+      "cost": 1000
+    }
+  ]
+}

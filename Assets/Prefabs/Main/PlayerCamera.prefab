@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6968984780414859154}
   - component: {fileID: 6968984780414859158}
   - component: {fileID: 4757907538305543208}
+  - component: {fileID: 7151661664645165427}
   - component: {fileID: 4271359191026406307}
   m_Layer: 0
   m_Name: PlayerCamera
@@ -113,6 +114,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jsonFile: {fileID: 4900000, guid: 786fedd25c2abb3419ae8d6cb700a705, type: 3}
+--- !u!114 &7151661664645165427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6968984780414859153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184b0eec6e0d4e73ab584af7e7b6e88d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonFile: {fileID: 4900000, guid: e6534636948f4c4090b6204c6d40cc4f, type: 3}
 --- !u!114 &4271359191026406307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,11 +148,20 @@ MonoBehaviour:
     Water: 2000
     Money: 2000
     Energy: 2000
-    Details: 2000
     Steel: 2000
     Currency: 2000
     Plastic: 2000
     Rubber: 2000
+    RefinedOre: 0
+    NonferrousMetal: 0
+    Nitrates: 0
+    Powder: 0
+    Organic: 0
+    Fuel: 0
+    TankParts: 0
+    Shells: 0
+    Details: 2000
+    Monoxide: 0
   onResourcesChange:
     m_PersistentCalls:
       m_Calls:

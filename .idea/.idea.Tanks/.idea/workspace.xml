@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8549727d-b203-4099-94ba-1aba176b992b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/manufacture.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/manufacture.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JsonParsers/TankJsonParser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JsonParsers/TankJsonParser.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tanks.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tanks/ArmourType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tanks/ArmourType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tanks/GunType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tanks/GunType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tanks/Tank.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tanks/Tank.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Jura-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Jura-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Panel/FortificationPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Panel/FortificationPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Panel/MainPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Panel/MainPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Recipes/ComponentCost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Recipes/ComponentCost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Recipes/Recipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Recipes/Recipe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Resources/Resources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Resources/Resources.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main/PlayerCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main/PlayerCamera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ManufactureUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ManufactureUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +29,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/120b8d04add741329ccd415c000fb66615ac00/74/e3b896ac/02000217.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/46/c3c6110a/020000B1.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/120b8d04add741329ccd415c000fb66615ac00/1b/1a0d2d8d/PropertyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/120b8d04add741329ccd415c000fb66615ac00/89/7521c3dd/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/120b8d04add741329ccd415c000fb66615ac00/90/a71ad7c2/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/120b8d04add741329ccd415c000fb66615ac00/b0/0f8cfc04/HideInInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/120b8d04add741329ccd415c000fb66615ac00/cf/c56c248d/HeaderAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/120b8d04add741329ccd415c000fb66615ac00/db/2dfb5b43/UnityEvent`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3d52072469f344969f5572d445f7b6c89a00/ff/0e9ade25/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/43dde5ac27db4df5839cefe518272cbb10fc00/dd/506d9ab0/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4f41070b52224a70bdc90f923c6b37de823000/0e/001c5899/HeaderDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/1d/8316431c/AttributeCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/4e/1c1b64d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/58/c37e2286/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/79/e3d5aedf/TypeIdentifierAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/7d/f31a60a8/DescriptionAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/b9/5087629d/Boolean.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/c8/c1462bb2/AttributeTargets.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d9536d9127f4a489d989c7a566aee1c46ac00/33/d6d73669/CustomAttributeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d9536d9127f4a489d989c7a566aee1c46ac00/55/321ac69e/RuntimePropertyInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -47,36 +53,88 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d9536d9127f4a489d989c7a566aee1c46ac00/a0/b13378aa/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d9536d9127f4a489d989c7a566aee1c46ac00/b1/295f6b22/Type.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b78f9add2a3e411ab5c48059b099d283284000/9b/0c148bc9/PropertyDescriptorCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ddc6e88db85042aeb6955c12ada6a5ce46e000/09/40644992/FlagsAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ddc6e88db85042aeb6955c12ada6a5ce46e000/34/4afe3b43/AttributeTargets.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ddc6e88db85042aeb6955c12ada6a5ce46e000/c9/f42f29e8/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Counter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonParsers/BuildJsonParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonParsers/CellJsonParser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/Recipes/ComponentCost.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/Resources/Resources.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/Resources/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SearcherScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TankBattle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/RSV/Tanks/Tanks/Assets/Scripts/UI/MainSceneUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditor/SpriteEditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditorModule/ISpriteEditorModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/CreateTileFromPaletteAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/EditorTools/BrushToolsAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridBrush.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridPaintSortingAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/EditorGameServices/AdsService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/EditorGameServices/AdsServiceEnabler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Editor/DevX/Settings/GameIdsUi.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Runtime/Advertisement/Platform/Editor/EditorBanner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Runtime/Advertisement/Platform/Editor/EditorPlatform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Runtime/Advertisement/Platform/Editor/Placeholder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Runtime/Advertisement/Utilities/UnityLifecycleManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Tests/Runtime/Advertisement/Utilities/UnityLifecycleManagerTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/Messaging/Messenger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/VisualStudioInstallation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.9.3/Runtime/Codeless/CodelessIAPButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.9.3/Runtime/Codeless/IAPButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.9.3/Runtime/Stores/Android/UDP/UDPReflectionUtil.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.9.3/Runtime/Stores/StandardPurchasingModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.9.3/Runtime/Stores/Util/UnityUtil.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.services.core@1.11.0/Runtime/Core/DynamicDependency/PreserveDependencyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEditor.TestRunner/NUnitExtension/Attributes/TestPlayerBuildModifierAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEditor.TestRunner/TestLaunchers/AttributeFinderBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEditor.TestRunner/TestLaunchers/PostbuildCleanupAttributeFinder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEditor.TestRunner/TestLaunchers/PrebuildSetupAttributeFinder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestMustExpectAllLogsAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/Utils/PostBuildCleanupAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/Utils/PrebuildSceneSetupAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/Utils/TestRunCallbackAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_SubMesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/Actions/ActionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/Attributes/ActiveInModeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/Attributes/MenuEntryAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/Attributes/ShortcutAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/DirectorNamedColor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/State/WindowState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/TimelineUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/Undo/ApplyDefaultUndoAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/Utilities/AnimatedParameterUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/Utilities/CustomTrackDrawerAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/inspectors/AnimationTrackInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Editor/inspectors/TimelineProjectSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Runtime/Attributes/TimelineHelpURLAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Runtime/Attributes/TrackColorAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Runtime/Events/Signals/CustomSignalEventDrawer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Runtime/Timeline.deprecated.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Runtime/TimelineAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.5/Samples~/Customization/Utilities/NoFoldOutAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/SelectableEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/InputField/DesktopInputFieldTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Analysis/AnalyserAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Assignment/AssignsAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Canvases/CanvasAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Context/GraphContextAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Context/GraphContextExtensionAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Decorators/MultiDecoratorProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Decorators/SingleDecoratorProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Dependencies/ReorderableList/ElementAdderMenu/ElementAdderMenuCommandAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.0/Editor/VisualScripting.Core/Dependencies/SQLite/SQLite.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2W0zuk3v1zuELmgUlYOKkuworFo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -137,10 +195,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17364">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15064">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17364" />
+      <option name="pid" value="15064" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -179,7 +237,8 @@
       <workItem from="1698643885506" duration="19943000" />
       <workItem from="1698687528372" duration="5647000" />
       <workItem from="1698729876599" duration="168000" />
-      <workItem from="1698730142069" duration="14054000" />
+      <workItem from="1698730142069" duration="24277000" />
+      <workItem from="1698767847982" duration="2806000" />
     </task>
     <servers />
   </component>
@@ -219,69 +278,17 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Counter.cs</url>
-          <line>41</line>
-          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Counter.cs" initialLine="38" containingFunctionPresentation="Method 'ChangeCount'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/JsonParsers/TankJsonParser.cs</url>
+          <line>21</line>
+          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\JsonParsers\TankJsonParser.cs" initialLine="21" containingFunctionPresentation="Method 'Parsing'">
             <startOffsets>
-              <option value="916" />
+              <option value="503" />
             </startOffsets>
             <endOffsets>
-              <option value="939" />
+              <option value="512" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/FortificationUI.cs</url>
-          <line>181</line>
-          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\UI\FortificationUI.cs" initialLine="181" containingFunctionPresentation="Method 'Produce'">
-            <startOffsets>
-              <option value="6140" />
-            </startOffsets>
-            <endOffsets>
-              <option value="6217" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Resources/Resources.cs</url>
-          <line>203</line>
-          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\Resources\Resources.cs" initialLine="201" containingFunctionPresentation="Method 'SetValue'">
-            <startOffsets>
-              <option value="4940" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4989" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Resources/Resources.cs</url>
-          <line>193</line>
-          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\Resources\Resources.cs" initialLine="193" containingFunctionPresentation="Method 'SetValue'">
-            <startOffsets>
-              <option value="4526" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4568" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Resources/Resources.cs</url>
-          <line>189</line>
-          <properties documentPath="D:\RSV\Tanks\Tanks\Assets\Scripts\Resources\Resources.cs" initialLine="189" containingFunctionPresentation="Method 'SetValue'">
-            <startOffsets>
-              <option value="4361" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4399" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="57" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
