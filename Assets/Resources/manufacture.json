@@ -1,7 +1,7 @@
 {
   "tanks": [
     {
-      "name": "Легкий танк",
+      "type": "Light",
       "body": true,
       "Power": [
         "Min"
@@ -15,7 +15,7 @@
       "cost": 200
     },
     {
-      "name": "Средний танк",
+      "type": "Medium",
       "body": true,
       "power": [
         "Min",
@@ -30,7 +30,7 @@
       "cost": 550
     },
     {
-      "name": "Тяжелый танк",
+      "type": "Heavy",
       "body": true,
       "power": [
         "Max"
@@ -44,7 +44,7 @@
       "cost": 1200
     },
     {
-      "name": "САУ",
+      "type": "SPG",
       "body": true,
       "power": [
         "Max"

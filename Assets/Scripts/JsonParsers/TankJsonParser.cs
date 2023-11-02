@@ -2,22 +2,22 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 
-public class TankJsonParser : MonoBehaviour, IJsonParser<Tank[]>
+public class TankJsonParser : MonoBehaviour, IJsonParser<BaseTankCharacteristics[]>
 {
     [SerializeField] private TextAsset jsonFile;
 
-    public Tank[] Tanks { get; private set; }
+    public BaseTankCharacteristics[] Tanks { get; private set; }
 
     private void Start()
     {
         Tanks = Parsing();
     }
 
-    public Tank[] Parsing()
+    public BaseTankCharacteristics[] Parsing()
     {
         var json = jsonFile.text;
         var jObject = JObject.Parse(json);
 
-        return JsonConvert.DeserializeObject<Tank[]>(jObject["tanks"].ToString());
+        return JsonConvert.DeserializeObject<BaseTankCharacteristics[]>(jObject["tanks"].ToString());
     }
 }
